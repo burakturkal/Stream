@@ -1,0 +1,61 @@
+Stream is an interface.
+
+Steps of Stream:
+1) Take stream code (source)(in creatingStream class, source is courses array)
+2) Build stream instance
+3) Go through intermadiate operations
+4) Apply Terminal Operation
+5) Get the result
+
+This process is called stream pipeline.
+
+---
+
+In a car factory, they take one car asemble it part by part and then
+move to the next car. They don't take 10 cars and put tires. We have this
+same operation in Java Stream too.
+
+Source : Where the stream comes from
+
+Intermediate operations : Transforms the stream into another one.
+There can be as few or as many operations as we would like. Intermediate
+operations do not perform any processing until a terminal operation is invoked.
+
+Terminal operations : Actual result is produced. Since streams can be used only
+once, the stream is no longer valid after a terminal operations completes.
+
+---
+
+A lot of Lambda will be used here.
+
+
+        FILTER
+        Filtering with a predicate : The stream interface supports a filter method.
+        This operation takes as argument a predicate (a function returning a boolean) and
+        returns a stream including all elements that matches the predicate.
+
+        DISTINCT
+        Filtering unique elements : The stream interface supports a distinct method. This
+        operation returns a stream with unique elements.
+
+         LIMIT
+         The stream interface supports a limit(n) method. This operation returns
+         a stream that’s no longer than a given size.
+
+         SKIP
+         The stream interface supports a skip(n) method. This operation returns
+         a stream that discards the first n element.
+         If the stream has fewer than n elements, an empty stream is returned.
+
+         MAP
+         The stream interface supports a map method. This operation takes a
+         function as argument. The function is applied to each element,
+         mapping it to a new element.
+
+
+ You can use this methods more than once. Look at MAP on StreamsMainPackage.StreamOperations.
+
+We'll use stream.FILTER and stream.MAP most of the type.
+
+---
+Intermadiate operator and terminate are used together in the same line
