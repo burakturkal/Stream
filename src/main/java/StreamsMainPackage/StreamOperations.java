@@ -82,6 +82,9 @@ public class StreamOperations {
          */
 
         myList.stream()
+                /*.map(number ->{
+                    System.out.println(number); return number*2;}) */ // Map needs to return something, but you can have
+                                                                    //multiple things in it
                 .map(number -> number*2)
                 .filter(i -> i%3 ==0)
                 .filter(i -> i%5 ==1)

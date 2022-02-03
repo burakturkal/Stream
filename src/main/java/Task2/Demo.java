@@ -25,5 +25,16 @@ public class Demo {
                 .filter(i -> i.getCalories() < 400)
                 .forEach(System.out::println);
 
+
+
+        System.out.println("------Second Part--------: Length");
+        menu.stream()
+                .map(dish -> dish.getWhat().length());
+
+        System.out.println("------Third Part--------: Name + Length");
+        menu.stream()
+                .map(dish -> dish.getWhat().length());
+
+        menu.forEach(dish -> System.out.println(dish.getWhat() + " " +dish.getWhat().length()));
     }
 }

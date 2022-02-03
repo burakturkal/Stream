@@ -12,3 +12,6 @@ Print all dish’s name that has less than 400 calories.
     new Dish("prawns",false,300,Type.FISH),
     new Dish("salmon",false,450,Type.FISH)
 );
+
+
+Print the length of the name of each dish

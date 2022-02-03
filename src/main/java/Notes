@@ -11,7 +11,7 @@ This process is called stream pipeline.
 
 ---
 
-In a car factory, they take one car asemble it part by part and then
+In a car factory, they take one car assemble it part by part and then
 move to the next car. They don't take 10 cars and put tires. We have this
 same operation in Java Stream too.
 
@@ -30,7 +30,7 @@ A lot of Lambda will be used here.
 
 
         FILTER
-        Filtering with a predicate : The stream interface supports a filter method.
+        Filtering with a PREDICATE : The stream interface supports a filter method.
         This operation takes as argument a predicate (a function returning a boolean) and
         returns a stream including all elements that matches the predicate.
 
@@ -49,7 +49,7 @@ A lot of Lambda will be used here.
 
          MAP
          The stream interface supports a map method. This operation takes a
-         function as argument. The function is applied to each element,
+         FUNCTION as argument. The function is applied to each element,
          mapping it to a new element.
 
 
