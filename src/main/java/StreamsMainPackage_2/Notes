@@ -1,0 +1,56 @@
+
+FLATMAP()
+
+map() takes Stream<t> and returns Stream<t>
+It is a mapper function produces single value for each input value.
+It is called One-To-One mapping.
+
+flatMap() takes Stream<Stream<T>> as input and returns Stream<T>
+It is a mapper function that produces multiple valie for each input valie.
+It is called One-To-Many mapping.
+
+Map Example: Stream.of(1,2,3,4) -> [1,2,3,4]
+
+FlatMap Example: [[1,2],[3,4],[5,6],[7,8]] -> [1,2,3,4,5,6,7,8]
+
+FlatMap take different streams and turns it into one stream. That's why
+it is called flat. It makes it less complicated.
+
+--------------------------
+
+We are not going to use flatMap in the development but it is still good to
+know for interviews.
+Interview Question: What's the difference between map() and flatmap()
+
+---------------------------
+
+OTHER METHODS: Could be possibly used
+
+anyMatch : Checks if there is an element in the stream matching the given predicate
+
+allMatch : Checks if all the elements of the stream match the given predicate.
+
+noneMatch : Ensures no elements in the stream match the given predicate.
+
+findAny : Returns any element from a Stream.
+
+reduce :The stream interface supports a reduce method. This operation allows
+        us to produce one single result from a sequence of elements
+        It takes 2 arguments:
+        1. An initial value (Might be skipped)
+        2. A BinaryOperator<T> to combine two elements and produce a new value.
+
+        reduce(0,(a,b) -> a+b)
+        reduce((a,b) -> a+b) (with Optional type)
+        reduce(Integer::min)
+        reduce(Integer::max)
+        reduce(Integer::sum)
+
+Infinite Stream: The Streams API provides two static methods to generate a stream
+                    from a function: Stream.iterate and Stream.generate
+                    These two operations let you create an infinite stream that does not
+                    have a fixed size.
+
+                    Stream.iterate(0,n->n+2) //here it makes infinite with the condition
+                    .limit(5) // here it limits with the number you want
+                    .forEach(System.out::println);

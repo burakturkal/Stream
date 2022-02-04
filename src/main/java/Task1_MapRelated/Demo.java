@@ -1,4 +1,4 @@
-package Task1;
+package Task1_MapRelated;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,4 +1,4 @@
-package Task2;
+package Task2_MapRelated;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,8 +7,8 @@ import lombok.Data;
 @AllArgsConstructor
 public class Dish {
 
-    private String what;
-    private boolean b;
+    private String name;
+    private boolean isVegetarian;
     private int calories;
     private Type meat;
 }
