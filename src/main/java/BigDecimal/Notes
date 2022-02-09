@@ -1,0 +1,18 @@
+The problem before was:
+
+double d1 = 174.56;
+double d2 = 174.26;
+
+sout(d1-d2):
+
+Output: 0.300000000000000001137 -> This is not precise. We don't want this especially in banking
+
+---
+
+If you use double or float, don't use double, instead use BigDecimal -> Look at BigDecimalDemo
+
+---
+
+Scale and Rounding will not be used in the class a lot, but you can find an example.
+You cannot scale something without rounding.
+CEILING and FLOORING are rounding methods
