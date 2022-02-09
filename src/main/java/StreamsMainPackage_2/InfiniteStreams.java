@@ -7,5 +7,6 @@ public class InfiniteStreams {
         Stream.iterate(0, n->n+2)
                 .limit(5)
                 .forEach(System.out::println);
+
     }
 }

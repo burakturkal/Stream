@@ -1,3 +1,5 @@
+--------------  TASK 1
+
 The Fibonacci series is famous as a classic programming exercise. The
 numbers in the following sequence are part of the Fibonacci series. 0, 1, 1, 2, 3, 5,
 8, 13, 21, 34, 55.... The first two numbers of the series are 0 and 1, and each
@@ -12,3 +14,7 @@ using iterate method.
 Stream.iterate(new int[]{0,1},???)
         .limit(20)
         .forEach(t -> System.out.println("("+t[0]+","+t[1]+")"));
+
+--------------TASK 2
+
+Print the Fibonacci series in normal way. (Following of previous task)
