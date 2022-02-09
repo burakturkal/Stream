@@ -1,4 +1,4 @@
-package Task8_TraderTask;
+package Task7_TraderTask;
 
 import java.util.Arrays;
 import java.util.List;
