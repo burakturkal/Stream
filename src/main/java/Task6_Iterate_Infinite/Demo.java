@@ -1,6 +1,5 @@
 package Task6_Iterate_Infinite;
 
-import java.sql.SQLOutput;
 import java.util.stream.Stream;
 
 public class Demo {
