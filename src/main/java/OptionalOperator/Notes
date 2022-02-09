@@ -1,0 +1,8 @@
+The reason why we use Optional is not to get Null Exception
+There isn't much to learn but it is something to keep in mind
+
+Spring is already made with Optional. That means we can use all
+its methods directly.
+
+Most important methods are:
+isPresent, ifPresent, orElse, and get
